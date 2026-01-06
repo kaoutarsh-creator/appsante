@@ -1,21 +1,19 @@
 pipeline {
     agent any
-
     stages {
-        stage('Pull Code') {
-    steps {
-        git url: 'https://github.com/kaoutarsh-creator/appsante.git'
-    }
-}
         stage('Build') {
             steps {
-                echo 'Build khdam'
+                echo 'Build ok 🎉'
             }
         }
-
         stage('Test') {
             steps {
-                echo 'Test khdam'
+                echo 'Tests ok ✅'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy ok 🚀'
             }
         }
     }
